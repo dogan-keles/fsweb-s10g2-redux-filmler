@@ -58,11 +58,11 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 - **Film Ekleme Action'ı:**
   - [x] movieReducer.js'ye bir `ADD_MOVIE` case'i ekleyin.
   - [x] Bu yeni case'in, `payload` aracılığıyla iletilen film datasını `movies` listesine ekleyin.
-  - [ ] `movieActions.js`'de `addMovie` için bir action generator oluşturun.
-  - [ ] Bir filmin eklenmesini tetikleyen componenti bulun ve `addMovie` action'ını bağlayın.
-  - [ ] `addMovie`'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın.
-  - [ ] Yeni bir film eklerken `id` değeri olarak `Date.now()` kullanın.
-  - [ ] Film eklendikten sonra filmler sayfasına yönlendirmek için `push('/movies/')` komutunu ekleyin.
+  - [x] `movieActions.js`'de `addMovie` için bir action generator oluşturun.
+  - [x] Bir filmin eklenmesini tetikleyen componenti bulun ve `addMovie` action'ını bağlayın.
+  - [x] `addMovie`'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın.
+  - [x] Yeni bir film eklerken `id` değeri olarak `Date.now()` kullanın.
+  - [x] Film eklendikten sonra filmler sayfasına yönlendirmek için `push('/movies/')` komutunu ekleyin.
 
 #### Favoriler reducerı oluşturun
 
@@ -73,17 +73,17 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
   - `favorites { Film[] }`: Film nesnesini içeren bir dizi (başlangıç değeri `[]`).
   - `displayFavorites { Boolean }`: Uygulamada favorilerin göster/gizle değerini tutan bir boolean (başlangıç değeri `false`).
 
-- [ ] `switch` deyimine `default` case'ini ekleyin.
+- [x] `switch` deyimine `default` case'ini ekleyin.
 
-- [ ] Yeni reducerınızı `./reducers/index.js` dosyasına import edin.
+- [x] Yeni reducerınızı `./reducers/index.js` dosyasına import edin.
 
-- [ ] `reducers/index.js`'de hem `moviesReducer`'ı hem de favori reducer'ı redux'a bağlamak için `combineReducers` metodunu kullanın.
+- [x] `reducers/index.js`'de hem `moviesReducer`'ı hem de favori reducer'ı redux'a bağlamak için `combineReducers` metodunu kullanın.
 
-- [ ] **Film işlevlerinizin artık çalışmadığına dikkat edin. Neden?** &nbsp;`movieReducer`a bağlı componentlerin tekrar çalışmasını sağlamak için gerekli değişiklikleri yapın.
+- [x] **Film işlevlerinizin artık çalışmadığına dikkat edin. Neden?** &nbsp;`movieReducer`a bağlı componentlerin tekrar çalışmasını sağlamak için gerekli değişiklikleri yapın.
 
-- [ ] Store içerisinden `favorites` değerini `FavoriteMovieList` componentine bağlayın ve test edin.
+- [x] Store içerisinden `favorites` değerini `FavoriteMovieList` componentine bağlayın ve test edin.
 
-- [ ] `DisplayFavorites` değerini store içerisinden çekerek `Movie` ve `AppHeader` componentinde ilgili yerlerde kullanın.
+- [x] `DisplayFavorites` değerini store içerisinden çekerek `Movie` ve `AppHeader` componentinde ilgili yerlerde kullanın.
 
 #### Favoriler eylemleri ekleyin
 
